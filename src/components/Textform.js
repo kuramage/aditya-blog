@@ -23,6 +23,14 @@ export default function Textform(props) {
         const newText=text.toLowerCase();
         setText(newText);
     }
+    const handleClearClick = ()=> {
+        setText("");
+    }
+    const speakText = () => {
+        const utterance = new SpeechSynthesisUtterance(text);
+        window.speechSynthesis.speak(utterance);
+    }
+
   return (
     <>
     <div>
@@ -32,6 +40,8 @@ export default function Textform(props) {
         </div>
         <button className="btn btn-primary" onClick={handelUpClick}>Convert to uppercase</button>
         <button className='btn btn-primary mx-2' onClick={handleLoClick} >Convert to Lowercase</button>
+        <button className="btn btn-primary" onClick={handleClearClick}>Clear Text</button>
+        <button className="btn btn-primary mx-2" onClick={speakText} > Text-to-Speech</button>
     </div>
     <div className="container my-2">
         <h2>Your Text Summary </h2>
