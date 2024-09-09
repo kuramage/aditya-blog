@@ -44,7 +44,7 @@ export default function Textform(props) {
     <div>
         <h1>{props.heading}</h1>
         <div className="mb-3">  
-            <textarea className="form-control" id="myBox" rows="12" value={text} onChange={handelOnChange}></textarea>
+            <textarea className="form-control " id="myBox" rows="12" value={text} onChange={handelOnChange} style={{backgroundColor:props.mode==='dark'?'darkgrey':'white'}}></textarea>
         </div>
         <button className="btn btn-success" onClick={handelUpClick}>Convert to uppercase</button>
         <button className='btn btn-success mx-2' onClick={handleLoClick} >Convert to Lowercase</button>
@@ -58,7 +58,7 @@ export default function Textform(props) {
         <p> <b>{noOfWords()}</b> words and  <b>{text.length}</b> characters</p>
         <p><b>{0.008* noOfWords()} </b>minutes read</p>
         <h2>Preview</h2>
-        <p>{text}</p>
+        <p>{text.length>0?text:"Enter something in the above box to preview it here"}</p>
     </div>
     </>
   )
