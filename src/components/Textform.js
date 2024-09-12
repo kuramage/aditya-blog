@@ -6,6 +6,7 @@ export default function Textform(props) {
         // console.log("uppercase is clicked");
         const newText=text.toUpperCase();
         setText(newText);
+        props.alert('Text converted to Uppercase','success')
     }
     const handelOnChange = (event)=>{
         // console.log("OnChange");
@@ -22,9 +23,11 @@ export default function Textform(props) {
     const handleLoClick = ()=>{
         const newText=text.toLowerCase();
         setText(newText);
+        props.alert('Text converted to Lowercase','success')
     }
     const handleClearClick = ()=> {
         setText("");
+        props.alert('Cleared text','success')
     }
     const speakText = () => {
         const utterance = new SpeechSynthesisUtterance(text);
@@ -32,6 +35,7 @@ export default function Textform(props) {
     }
     const handelCopy = () => {
         navigator.clipboard.writeText(text);
+        props.alert('Text Copied to clipboard','success')
     }
     const handelspace = () =>{
         const newText=text.split(/[ ]+/);
