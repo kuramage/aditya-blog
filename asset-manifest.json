@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aditya-blog/static/css/main.16657954.chunk.css",
+    "main.js": "/aditya-blog/static/js/main.5479e5fa.chunk.js",
+    "main.js.map": "/aditya-blog/static/js/main.5479e5fa.chunk.js.map",
+    "runtime~main.js": "/aditya-blog/static/js/runtime~main.a3e2fec5.js",
+    "runtime~main.js.map": "/aditya-blog/static/js/runtime~main.a3e2fec5.js.map",
+    "static/js/2.a58ae963.chunk.js": "/aditya-blog/static/js/2.a58ae963.chunk.js",
+    "static/js/2.a58ae963.chunk.js.map": "/aditya-blog/static/js/2.a58ae963.chunk.js.map",
+    "index.html": "/aditya-blog/index.html",
+    "precache-manifest.ee2909a905a4215648b5681c3deca964.js": "/aditya-blog/precache-manifest.ee2909a905a4215648b5681c3deca964.js",
+    "service-worker.js": "/aditya-blog/service-worker.js",
+    "static/css/main.16657954.chunk.css.map": "/aditya-blog/static/css/main.16657954.chunk.css.map"
+  }
+}
